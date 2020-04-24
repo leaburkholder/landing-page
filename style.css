@@ -1,0 +1,296 @@
+/*Base styles*/
+@font-face {
+    font-family: 'futurabook';
+    src: url('fonts/futura-book-webfont.woff2') format('woff2'),
+         url('fonts/futura-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futuraheavy';
+    src: url('fonts/futura-heavy-webfont.woff2') format('woff2'),
+         url('fonts/futura-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'futurabook', sans-serif;
+    color: #393939;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'futuraheavy', sans-serif;
+    margin: 0;
+}
+h1 {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 32px;
+}
+img {
+    display: block;
+    width: 100%;
+}
+
+/*Layout styles*/
+.section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Block styles*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px 0 100px;
+}
+
+.header__hamburger {
+    width: 39px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.header__hamburger::before,
+.header__hamburger::after {
+    content: '';
+    background-color: #871AFF;
+    height: 3px;
+    border-radius: 20px;
+}
+.header__hamburger::before {
+    width: 39px;
+}
+.header__hamburger::after {
+    width: 30px;
+}
+
+.header__logo {
+    width: 160px;
+    height: 45px;
+}
+
+.nav {
+    display: none;
+}
+
+.hero {
+    margin-bottom: 300px;
+    background-image: url(images/backgrounds/hero-bg-texture.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.hero__heading {
+    max-width: 280px;
+}
+.hero__inbound-card {
+    margin: 80px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.25);
+    max-width: 764px;
+}
+
+.features {
+    margin-bottom: 200px;
+}
+.features__heading {
+    color: #533FFF;
+    text-align: center;
+}
+.features__dashboard {
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+
+.feature__container {
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feature {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    max-width: 335px;
+}
+.feature__description {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 141%;
+    margin: 0;
+    padding-right: 45px;
+}
+.feature__flavor {
+    width: 20px;
+    height: 100%;
+}
+
+.integrations {
+    margin: 80px 0;
+}
+.integrations__heading {
+    display: flex;
+    color: #5E38FF;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.integrations__logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.integrations__logo {
+    width: 115px;
+    margin: 20px 0;
+}
+
+.footer {
+    background: linear-gradient(229.93deg, #AB00FF -21.91%, #007BFF 133.89%);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.footer__heading {
+    color: white;
+    text-align: center;
+}
+.footer__form {
+    margin: 40px auto 0 auto;
+    display: flex;
+    max-width: 520px;
+    justify-content: center;
+}
+.footer__email {
+    font-family: 'futuraheavy';
+    background: #A681FF;
+    border-radius: 99999px;
+    border: none;
+    flex-grow: 1;
+    padding-left: 20px;
+    color: white;
+    font-size: 12px;
+}
+.footer__email::placeholder {
+    color: #BBA1FF;
+}
+.footer__download {
+    margin-left: 16px;
+    background-color: white;
+    color: #6235FF;
+    font-family: 'futuraheavy';
+    font-size: 10px;
+    text-transform: uppercase;
+    border-radius: 99999px;
+    padding: 10px 20px;
+}
+.footer__nav {
+    margin-top: 250px;
+}
+.footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.footer__list-item {
+    margin: 0;
+}
+.footer__link {
+    font-family: 'futuraheavy';
+    font-size: 10px;
+    line-height: 30px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.04167px;
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 1px;
+    }
+    .section {
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    .header__hamburger {
+        display: none;
+    }
+    .nav {
+        display: flex;
+    }
+    .nav__list {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+    }
+    .nav__list-item {
+        margin-left: 20px;
+    }
+    .nav__link {
+        font-size: 15px;
+        font-family: 'futuraheavy', sans-serif;
+        text-transform: uppercase;
+        color: #393939;
+        text-decoration: none;
+        letter-spacing: 1.5625px;
+    }
+    .nav__link--callout {
+        color: white;
+        padding: 15px 30px;
+        background: linear-gradient(196.2deg, #AB00FF -34.29%, #007BFF 136.11%);
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.24);
+        border-radius: 100px;
+    }
+    .hero {
+        background-image: url(images/backgrounds/hero-bg-cards.png), url(images/backgrounds/hero-bg-texture.png);
+    }
+    .hero__heading {
+        max-width: 100%;
+    }
+    .feature__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .feature {
+        max-width: 310px;
+    }
+    .integrations__logos {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .integrations__logo {
+        width: 163px;
+    }
+    .footer {
+        padding-top: 150px;
+    }
+    .footer__email {
+        font-size: 17px;
+        line-height: 23px;
+    }
+    .footer__download {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 15px 40px;
+    }
+    .footer__links {
+        font-size: 15px;
+        line-height: 32px;
+        letter-spacing: 1.5625px;
+    }
+}

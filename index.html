@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="section header">
         <img class="header__logo" src="images/hero/zenith-logo.png" alt="zenith">
-        <div class="header__hambuger"></div>
+        <div class="header__hamburger"></div>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__list-item">
@@ -19,36 +19,42 @@
                     <a class="nav__link" href="">Integrations</a>
                 </li>
                 <li class="nav__list-item">
-                    <a class="nav__link" href="">Get Zenith</a>
+                    <a class="nav__link nav__link--callout" href="">Get Zenith</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section class="hero">
+    <section class="section hero">
         <h1 class="hero__heading">
-            All your communication. One place.
+            All your communication.
+            <br>
+            One place.
         </h1>
         <img class= "hero__inbound-card" src="images/hero/inbound-card.png" alt="inbound card">
     </section>
-    <section class="features">
+    <section class="section features">
         <h1 class="features__heading">The features that matter</h1>
-        <div class="feature">
-            <p class="feature__description">Mark all your completed threads in one place</p>
-            <img src="images/features/features-checkboxes.png" alt="checkboxes" class="feature__flavor">
-        </div>
-        <div class="feature">
-            <p class="feature__description">Integrate all your communication platforms</p>
-            <img src="images/features/features-integrations.png" alt="integrations" class="feature__flavor">
-        </div>
-        <div class="feature">
-            <p class="feature__description">See all your notifications in one place</p>
-            <img src="images/features/features-notifications.png" alt="notifications" class="feature__flavor">
+        <div class="feature__container">
+            <div class="feature">
+                <p class="feature__description">Mark all your completed threads in one place</p>
+                <img src="images/features/features-checkboxes.png" alt="checkboxes" class="feature__flavor">
+            </div>
+            <div class="feature">
+                <p class="feature__description">Integrate all your communication platforms</p>
+                <img src="images/features/features-integrations.png" alt="integrations" class="feature__flavor">
+            </div>
+            <div class="feature">
+                <p class="feature__description">See all your notifications in one place</p>
+                <img src="images/features/features-notifications.png" alt="notifications" class="feature__flavor">
+            </div>
         </div>
         <img src="images/features/zenith-dasboard.png" alt="dashboard" class="features__dashboard">
     </section>
-    <section class="integrations">
+    <section class="section integrations">
         <h1 class="integrations__heading">
-            Your favorite products finally together
+            Your favorite products
+            <br>
+            finally together
         </h1>
         <div class="integrations__logos">
             <img src="images/integrations/slack-full.png" alt="slack" class="integrations__logo">
@@ -58,10 +64,10 @@
             <img src="images/integrations/asana.png" alt="asana" class="integrations__logo">
         </div>
     </section>
-    <footer class="footer">
+    <footer class="section footer">
         <h1 class="footer__heading">Stay up to date</h1>
         <form action="" class="footer__form">
-            <input type="email" class="footer__email">
+            <input type="email" class="footer__email" placeholder="Email address">
             <button class="footer__download">
                 Download
             </button>
